@@ -1,0 +1,3176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PREMIUM FOLDERS😈🔥</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+        }
+        
+        body {
+            background: #0f0f0f;
+            color: #e5e5e5;
+            line-height: 1.4;
+            padding: 10px;
+            font-size: 13px;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        /* Activity Panel */
+        .activity-panel {
+            background: linear-gradient(135deg, #1a1a1a, #0a0a0a);
+            border-radius: 12px;
+            padding: 18px;
+            margin-bottom: 25px;
+            border: 1px solid #333;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+        }
+        
+        .activity-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid #333;
+        }
+        
+        .activity-header h3 {
+            color: #fff;
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .activity-content {
+            border: 1px solid #333;
+            border-radius: 8px;
+            background: rgba(0, 0, 0, 0.3);
+        }
+        
+        .live-users {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 15px;
+            padding: 15px;
+            background: rgba(16, 185, 129, 0.1);
+            border-radius: 8px;
+            border: 1px solid rgba(16, 185, 129, 0.3);
+        }
+        
+        .live-dot {
+            width: 8px;
+            height: 8px;
+            background: #10b981;
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.5; }
+            100% { opacity: 1; }
+        }
+        
+        .recent-purchases {
+            max-height: 220px;
+            overflow-y: auto;
+            padding: 15px;
+        }
+        
+        .purchase-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 12px;
+            border-bottom: 1px solid #333;
+            transition: background 0.2s ease;
+        }
+        
+        .purchase-item:hover {
+            background: rgba(255, 255, 255, 0.05);
+        }
+        
+        .purchase-item:last-child {
+            border-bottom: none;
+        }
+        
+        .purchase-user {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .user-avatar {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+        
+        .purchase-info {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        }
+        
+        .user-name {
+            color: #fff;
+            font-weight: 600;
+            font-size: 0.85rem;
+        }
+        
+        .product-name {
+            color: #aaa;
+            font-size: 0.75rem;
+        }
+        
+        .purchase-time {
+            color: #666;
+            font-size: 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .purchase-amount {
+            color: #10b981;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+        
+        /* All Content Preview Section */
+        .all-content-preview {
+            background: linear-gradient(135deg, #1a1a1a, #0a0a0a);
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 35px;
+            border: 1px solid #333;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .all-content-preview::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, #667eea, #764ba2, #dc2626);
+        }
+        
+        .preview-header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 15px;
+        }
+        
+        .preview-header h2 {
+            color: #fff;
+            font-size: 1.8rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #667eea, #dc2626);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .preview-header i {
+            font-size: 1.8rem;
+            color: #dc2626;
+        }
+        
+        .preview-description {
+            color: #aaa;
+            font-size: 0.9rem;
+            margin-bottom: 20px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.4;
+        }
+        
+        /* Video tabs for preview section */
+        .preview-video-tabs {
+            display: flex;
+            background: #0f0f0f;
+            border-bottom: 1px solid #333;
+            margin-bottom: 0;
+            border-radius: 8px 8px 0 0;
+            overflow: hidden;
+        }
+        
+        .preview-video-tab {
+            flex: 1;
+            padding: 10px 0;
+            background: transparent;
+            border: none;
+            color: #aaa;
+            font-size: 0.85rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .preview-video-tab:hover {
+            color: #fff;
+            background: rgba(255, 255, 255, 0.05);
+        }
+        
+        .preview-video-tab.active {
+            color: #dc2626;
+            background: rgba(220, 38, 38, 0.1);
+        }
+        
+        .preview-video-tab.active::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: #dc2626;
+        }
+        
+        .preview-video-container {
+            position: relative;
+            width: 100%;
+            max-width: 800px;
+            height: 300px;
+            margin: 0 auto;
+            border-radius: 0 0 12px 12px;
+            overflow: hidden;
+            border: 2px solid #333;
+            border-top: none;
+            background: #000;
+        }
+        
+        .preview-video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: none;
+        }
+        
+        .preview-video.active {
+            display: block;
+        }
+        
+        .preview-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 10px;
+            background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+        
+        .preview-badge {
+            background: rgba(220, 38, 38, 0.9);
+            color: white;
+            padding: 6px 12px;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        
+        .preview-price {
+            background: linear-gradient(135deg, #f97316, #ea580c);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 8px;
+            font-size: 1.2rem;
+            font-weight: 700;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin: 12px 0;
+        }
+        
+        .preview-old-price {
+            color: #999;
+            font-size: 0.9rem;
+            text-decoration: line-through;
+            margin-right: 6px;
+        }
+        
+        .preview-btn {
+            background: linear-gradient(135deg, #dc2626, #b91c1c);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 1.1rem;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin: 0 auto;
+            text-decoration: none;
+            width: fit-content;
+        }
+        
+        .preview-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(220, 38, 38, 0.3);
+        }
+        
+        .preview-stats {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .stat-item {
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 1.5rem;
+            color: #10b981;
+            font-weight: 700;
+            display: block;
+        }
+        
+        .stat-label {
+            color: #aaa;
+            font-size: 0.8rem;
+            margin-top: 5px;
+        }
+        
+        /* Main Tabs Navigation */
+        .main-tabs {
+            display: flex;
+            background: #0f0f0f;
+            border-radius: 12px 12px 0 0;
+            overflow: hidden;
+            border: 1px solid #333;
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+        
+        .main-tab {
+            flex: 1;
+            padding: 12px 0;
+            background: transparent;
+            border: none;
+            color: #aaa;
+            font-size: 0.9rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+        
+        .main-tab:hover {
+            color: #fff;
+            background: rgba(255, 255, 255, 0.05);
+        }
+        
+        .main-tab.active {
+            color: #fff;
+            background: linear-gradient(135deg, #1a1a1a, #0a0a0a);
+        }
+        
+        .main-tab.active::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(90deg, #8B5CF6, #EC4899);
+        }
+        
+        /* Products & VIP Container */
+        .content-container {
+            background: linear-gradient(135deg, #1a1a1a, #0a0a0a);
+            border-radius: 0 0 12px 12px;
+            border: 1px solid #333;
+            border-top: none;
+            padding: 20px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+            margin-bottom: 30px;
+        }
+        
+        .content-section {
+            display: none;
+        }
+        
+        .content-section.active {
+            display: block;
+        }
+        
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 15px;
+            margin-bottom: 0;
+        }
+        
+        .vip-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 15px;
+            margin-bottom: 0;
+        }
+        
+        .product-card, .vip-card {
+            background: #1a1a1a;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+            transition: transform 0.2s ease;
+            border: 1px solid #333;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+        
+        .product-card:hover, .vip-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+            border-color: #444;
+        }
+        
+        .vip-card {
+            border-color: #8B5CF6;
+        }
+        
+        .vip-card:hover {
+            border-color: #EC4899;
+            box-shadow: 0 6px 15px rgba(139, 92, 246, 0.2);
+        }
+        
+        /* Media tabs */
+        .media-tabs {
+            display: flex;
+            background: #0f0f0f;
+            border-bottom: 1px solid #333;
+        }
+        
+        .media-tab {
+            flex: 1;
+            padding: 8px 0;
+            background: transparent;
+            border: none;
+            color: #aaa;
+            font-size: 0.75rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .media-tab:hover {
+            color: #fff;
+            background: rgba(255, 255, 255, 0.05);
+        }
+        
+        .media-tab.active {
+            color: #10b981;
+        }
+        
+        .media-tab.active::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: #10b981;
+        }
+        
+        .media-container {
+            width: 100%;
+            height: 200px;
+            position: relative;
+            background: #000;
+            overflow: hidden;
+            flex-shrink: 0;
+        }
+        
+        .vip-video-container {
+            width: 100%;
+            height: 200px;
+            position: relative;
+            background: #000;
+            overflow: hidden;
+            flex-shrink: 0;
+            border-bottom: 1px solid #333;
+        }
+        
+        .media-content {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .product-image, .product-video, .vip-video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: none;
+        }
+        
+        .product-image.active, .product-video.active, .vip-video {
+            display: block;
+        }
+        
+        .media-placeholder {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            color: #666;
+            font-size: 0.75rem;
+            flex-direction: column;
+            gap: 8px;
+        }
+        
+        /* BEST SELLER BADGE */
+        .best-seller-badge {
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            background: linear-gradient(135deg, #FFD700, #FFA500);
+            color: #000;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.65rem;
+            font-weight: 900;
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+        
+        .product-content, .vip-content {
+            padding: 12px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .product-title, .vip-title {
+            font-size: 0.95rem;
+            color: #fff;
+            margin-bottom: 6px;
+            font-weight: 600;
+            line-height: 1.2;
+        }
+        
+        .vip-title {
+            color: #EC4899;
+        }
+        
+        .product-description, .vip-description {
+            color: #aaa;
+            font-size: 0.75rem;
+            margin-bottom: 10px;
+            line-height: 1.3;
+            flex-grow: 1;
+        }
+        
+        .description-item {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            margin-bottom: 2px;
+            font-size: 0.7rem;
+        }
+        
+        .description-item i {
+            color: #10b981;
+            font-size: 0.65rem;
+            flex-shrink: 0;
+        }
+        
+        .product-price, .vip-price {
+            font-size: 1.1rem;
+            color: #10b981;
+            font-weight: 700;
+            margin: 8px 0 10px 0;
+            display: flex;
+            align-items: center;
+            gap: 3px;
+        }
+        
+        .vip-price {
+            color: #EC4899;
+            margin-top: auto;
+        }
+        
+        .product-price::before {
+            content: '$';
+            font-size: 0.9rem;
+            color: #10b981;
+        }
+        
+        .vip-price::before {
+            content: '$';
+            font-size: 0.9rem;
+            color: #EC4899;
+        }
+        
+        /* Payment Buttons Container */
+        .payment-options {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-top: auto;
+        }
+        
+        .payment-method-selector {
+            display: flex;
+            gap: 5px;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #333;
+            padding-bottom: 10px;
+        }
+        
+        .payment-method-tab {
+            flex: 1;
+            padding: 8px 5px;
+            background: #1a1a1a;
+            border: 1px solid #333;
+            border-radius: 4px;
+            color: #aaa;
+            font-size: 0.75rem;
+            cursor: pointer;
+            text-align: center;
+        }
+        
+        .payment-method-tab.active {
+            background: #2a2a2a;
+            color: #fff;
+            border-color: #635bff;
+        }
+        
+        .payment-method-content {
+            display: none;
+        }
+        
+        .payment-method-content.active {
+            display: block;
+        }
+        
+        /* Buy buttons - INCREASED SIZE */
+        .buy-btn, .vip-btn, .preview-btn {
+            background: linear-gradient(135deg, #EC4899, #8B5CF6);
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            font-size: 0.95rem;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            width: 100%;
+            font-weight: 600;
+            position: relative;
+            overflow: hidden;
+            text-decoration: none;
+            display: block;
+            text-align: center;
+        }
+        
+        .vip-btn, .preview-btn {
+            background: linear-gradient(135deg, #EC4899, #8B5CF6);
+        }
+        
+        .buy-btn:hover, .vip-btn:hover, .preview-btn:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 3px 10px rgba(236, 72, 153, 0.3);
+        }
+        
+        .buy-btn:active, .vip-btn:active, .preview-btn:active {
+            transform: translateY(0);
+        }
+        
+        /* Stripe Payment Buttons */
+        .stripe-btn {
+            background: linear-gradient(135deg, #635bff, #5a54ff);
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            font-size: 0.95rem;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            width: 100%;
+            font-weight: 600;
+            position: relative;
+            overflow: hidden;
+            text-decoration: none;
+            display: block;
+            text-align: center;
+        }
+        
+        .stripe-btn:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 3px 10px rgba(99, 91, 255, 0.3);
+            background: linear-gradient(135deg, #5a54ff, #5048ff);
+        }
+        
+        .preview-payment-options {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            max-width: 400px;
+            margin: 15px auto;
+        }
+        
+        .stripe-icon {
+            background: #635bff;
+            border-radius: 4px;
+            padding: 2px 5px;
+            margin-right: 5px;
+        }
+        
+        .telegram-icon {
+            background: #0088cc;
+            border-radius: 4px;
+            padding: 2px 5px;
+            margin-right: 5px;
+        }
+        
+        .secure-badge {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            color: #10b981;
+            font-size: 0.75rem;
+            margin-top: 5px;
+        }
+        
+        .fallback-notice {
+            background: rgba(245, 158, 11, 0.1);
+            border: 1px solid rgba(245, 158, 11, 0.3);
+            border-radius: 6px;
+            padding: 8px;
+            margin-top: 8px;
+            color: #f59e0b;
+            font-size: 0.7rem;
+            text-align: center;
+            display: none;
+        }
+        
+        .purchase-count, .vip-stats {
+            font-size: 0.7rem;
+            color: #666;
+            margin-top: 5px;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+        
+        .vip-stats {
+            justify-content: space-between;
+            margin-top: 8px;
+            margin-bottom: 8px;
+        }
+        
+        .vip-stat {
+            text-align: center;
+            flex: 1;
+        }
+        
+        .vip-stat-number {
+            color: #8B5CF6;
+            font-weight: 700;
+            font-size: 0.8rem;
+        }
+        
+        .vip-stat-label {
+            color: #666;
+            font-size: 0.6rem;
+        }
+        
+        /* FAQ SECTION - Smaller text */
+        .faq-section {
+            background: linear-gradient(135deg, #1a1a1a, #0a0a0a);
+            border-radius: 10px;
+            padding: 15px;
+            margin: 20px 0;
+            border: 1px solid #333;
+        }
+        
+        .faq-section h3 {
+            color: #fff;
+            margin-bottom: 12px;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .faq-item {
+            border-bottom: 1px solid #333;
+            padding: 10px 0;
+        }
+        
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+        
+        .faq-question {
+            color: #fff;
+            font-weight: 600;
+            font-size: 0.75rem;
+            margin-bottom: 5px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        
+        .faq-answer {
+            color: #aaa;
+            font-size: 0.7rem;
+            padding-left: 20px;
+            line-height: 1.4;
+        }
+        
+        .payment-section {
+            background: #1a1a1a;
+            border-radius: 10px;
+            padding: 16px;
+            margin-top: 20px;
+            border: 1px solid #333;
+        }
+        
+        .payment-section h3 {
+            color: #fff;
+            margin-bottom: 8px;
+            font-size: 0.95rem;
+            font-weight: 600;
+        }
+        
+        .payment-section p {
+            color: #aaa;
+            font-size: 0.75rem;
+            margin-bottom: 5px;
+        }
+        
+        .telegram-section {
+            background: linear-gradient(135deg, #1a1a1a, #0f0f0f);
+            border: 1px solid #333;
+            border-radius: 10px;
+            padding: 15px;
+            margin-top: 15px;
+            text-align: center;
+        }
+        
+        .telegram-section a {
+            color: #0088cc;
+            font-weight: 600;
+            text-decoration: none;
+            background: rgba(0, 136, 204, 0.1);
+            padding: 6px 12px;
+            border-radius: 6px;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            margin-top: 6px;
+            transition: all 0.2s ease;
+            border: 1px solid rgba(0, 136, 204, 0.3);
+            font-size: 0.8rem;
+        }
+        
+        .telegram-section a:hover {
+            background: rgba(0, 136, 204, 0.2);
+            transform: translateY(-1px);
+        }
+        
+        .disclaimer {
+            text-align: center;
+            color: #666;
+            font-size: 0.65rem;
+            margin-top: 20px;
+            padding: 10px;
+            border-top: 1px solid #333;
+        }
+        
+        /* Fullscreen video */
+        .fullscreen-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.95);
+            z-index: 10000;
+            display: none;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .fullscreen-video.active {
+            display: flex;
+        }
+        
+        .fullscreen-video video {
+            width: 90%;
+            height: 90%;
+            object-fit: contain;
+        }
+        
+        .close-fullscreen {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            border: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-size: 1.2rem;
+            z-index: 10001;
+        }
+        
+        /* Play button overlay for videos */
+        .video-play-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            z-index: 1;
+        }
+        
+        .play-icon {
+            width: 50px;
+            height: 50px;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+            border: 2px solid white;
+        }
+        
+        /* Fallback Modal */
+        .fallback-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.9);
+            z-index: 10002;
+            display: none;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .fallback-modal.active {
+            display: flex;
+        }
+        
+        .fallback-content {
+            background: #1a1a1a;
+            padding: 25px;
+            border-radius: 12px;
+            border: 1px solid #333;
+            max-width: 450px;
+            width: 90%;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+        
+        .fallback-icon {
+            font-size: 3rem;
+            color: #f59e0b;
+            margin-bottom: 15px;
+        }
+        
+        .fallback-title {
+            color: #fff;
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+        
+        .fallback-message {
+            color: #aaa;
+            font-size: 0.95rem;
+            margin-bottom: 25px;
+            line-height: 1.5;
+        }
+        
+        .fallback-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        
+        .fallback-telegram-btn {
+            background: linear-gradient(135deg, #0088cc, #006699);
+            color: white;
+            border: none;
+            padding: 14px;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        
+        .fallback-cancel-btn {
+            background: #333;
+            color: #aaa;
+            border: 1px solid #444;
+            padding: 12px;
+            border-radius: 8px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+        
+        /* Confirmation Page Styles */
+        .confirmation-page {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #0f0f0f;
+            z-index: 10003;
+            overflow-y: auto;
+            padding: 20px;
+        }
+        
+        .confirmation-page.active {
+            display: block;
+        }
+        
+        .confirmation-content {
+            max-width: 800px;
+            margin: 50px auto;
+            background: linear-gradient(135deg, #1a1a1a, #0a0a0a);
+            border-radius: 16px;
+            padding: 40px;
+            border: 1px solid #333;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+            text-align: center;
+        }
+        
+        .confirmation-icon {
+            font-size: 4rem;
+            color: #10b981;
+            margin-bottom: 20px;
+            animation: bounce 1s ease infinite alternate;
+        }
+        
+        @keyframes bounce {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-10px); }
+        }
+        
+        .confirmation-title {
+            color: #fff;
+            font-size: 2.2rem;
+            margin-bottom: 15px;
+            font-weight: 700;
+            background: linear-gradient(135deg, #10b981, #059669);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .confirmation-subtitle {
+            color: #aaa;
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.5;
+        }
+        
+        .confirmation-steps {
+            background: rgba(255,255,255,0.05);
+            border-radius: 12px;
+            padding: 25px;
+            margin: 30px 0;
+            border: 1px solid #333;
+            text-align: left;
+        }
+        
+        .confirmation-step {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #333;
+        }
+        
+        .confirmation-step:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+        
+        .step-number {
+            background: linear-gradient(135deg, #8B5CF6, #EC4899);
+            color: white;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1rem;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+        
+        .step-content h4 {
+            color: #fff;
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+        
+        .step-content p {
+            color: #aaa;
+            font-size: 0.95rem;
+            line-height: 1.4;
+        }
+        
+        .confirmation-telegram-box {
+            background: rgba(0, 136, 204, 0.1);
+            border: 1px solid rgba(0, 136, 204, 0.3);
+            border-radius: 12px;
+            padding: 25px;
+            margin: 25px 0;
+        }
+        
+        .telegram-contact {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .telegram-username {
+            background: rgba(0, 136, 204, 0.2);
+            color: #0088cc;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            border: 1px solid rgba(0, 136, 204, 0.4);
+        }
+        
+        .confirmation-buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+        
+        .confirmation-btn {
+            padding: 15px 30px;
+            border-radius: 10px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            border: none;
+        }
+        
+        .confirmation-btn.telegram {
+            background: linear-gradient(135deg, #0088cc, #006699);
+            color: white;
+        }
+        
+        .confirmation-btn.telegram:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(0, 136, 204, 0.3);
+        }
+        
+        .confirmation-btn.home {
+            background: rgba(255,255,255,0.1);
+            color: #fff;
+            border: 1px solid #333;
+        }
+        
+        .confirmation-btn.home:hover {
+            background: rgba(255,255,255,0.15);
+            transform: translateY(-2px);
+        }
+        
+        .confirmation-note {
+            color: #888;
+            font-size: 0.9rem;
+            margin-top: 25px;
+            padding-top: 20px;
+            border-top: 1px solid #333;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 6px;
+                font-size: 12px;
+            }
+            
+            .activity-panel {
+                padding: 15px;
+                margin-bottom: 20px;
+            }
+            
+            .all-content-preview {
+                padding: 15px;
+                margin-bottom: 25px;
+            }
+            
+            .preview-header h2 {
+                font-size: 1.4rem;
+            }
+            
+            .preview-header i {
+                font-size: 1.4rem;
+            }
+            
+            .preview-description {
+                font-size: 0.8rem;
+            }
+            
+            .preview-video-container {
+                height: 200px;
+            }
+            
+            .preview-price {
+                font-size: 1rem;
+                padding: 6px 12px;
+            }
+            
+            .preview-btn {
+                padding: 10px 18px;
+                font-size: 1rem;
+            }
+            
+            .stat-number {
+                font-size: 1.2rem;
+            }
+            
+            .main-tabs {
+                flex-direction: column;
+            }
+            
+            .main-tab {
+                padding: 10px 0;
+                font-size: 0.8rem;
+            }
+            
+            .content-container {
+                padding: 15px;
+                margin-bottom: 20px;
+            }
+            
+            .products-grid, .vip-grid {
+                grid-template-columns: 1fr;
+                gap: 12px;
+            }
+            
+            .product-title, .vip-title {
+                font-size: 0.9rem;
+            }
+            
+            .product-description, .vip-description {
+                font-size: 0.72rem;
+            }
+            
+            .media-container {
+                height: 180px;
+            }
+            
+            .vip-video-container {
+                height: 180px;
+            }
+            
+            .product-price, .vip-price {
+                font-size: 1rem;
+            }
+            
+            .buy-btn, .vip-btn, .preview-btn, .stripe-btn {
+                padding: 11px 18px;
+                font-size: 0.9rem;
+            }
+            
+            .purchase-count, .vip-stats {
+                font-size: 0.68rem;
+            }
+            
+            .vip-stat-number {
+                font-size: 0.78rem;
+            }
+            
+            .description-item {
+                font-size: 0.68rem;
+            }
+            
+            .faq-section {
+                padding: 12px;
+            }
+            
+            .faq-question {
+                font-size: 0.72rem;
+            }
+            
+            .faq-answer {
+                font-size: 0.68rem;
+            }
+            
+            .play-icon {
+                width: 40px;
+                height: 40px;
+                font-size: 1.2rem;
+            }
+            
+            .payment-method-tab {
+                font-size: 0.7rem;
+                padding: 6px 3px;
+            }
+            
+            .fallback-content {
+                padding: 20px;
+                margin: 15px;
+            }
+            
+            .fallback-title {
+                font-size: 1.2rem;
+            }
+            
+            .confirmation-content {
+                padding: 25px;
+                margin: 20px auto;
+            }
+            
+            .confirmation-title {
+                font-size: 1.8rem;
+            }
+            
+            .confirmation-subtitle {
+                font-size: 1rem;
+            }
+            
+            .confirmation-steps {
+                padding: 20px;
+            }
+            
+            .confirmation-step {
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            .confirmation-buttons {
+                flex-direction: column;
+            }
+            
+            .confirmation-btn {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .preview-video-container {
+                height: 180px;
+            }
+            
+            .preview-header h2 {
+                font-size: 1.2rem;
+            }
+            
+            .preview-header i {
+                font-size: 1.2rem;
+            }
+            
+            .preview-badge {
+                padding: 5px 10px;
+                font-size: 0.8rem;
+            }
+            
+            .stat-number {
+                font-size: 1rem;
+            }
+            
+            .stat-label {
+                font-size: 0.7rem;
+            }
+            
+            .main-tab {
+                padding: 8px 0;
+                font-size: 0.75rem;
+            }
+            
+            .media-container {
+                height: 160px;
+            }
+            
+            .vip-video-container {
+                height: 160px;
+            }
+            
+            .product-content, .vip-content {
+                padding: 10px;
+            }
+            
+            .product-title, .vip-title {
+                font-size: 0.85rem;
+            }
+            
+            .product-description, .vip-description {
+                font-size: 0.7rem;
+            }
+            
+            .product-price, .vip-price {
+                font-size: 0.95rem;
+                margin: 6px 0 8px 0;
+            }
+            
+            .description-item {
+                font-size: 0.66rem;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Fullscreen Video Overlay -->
+    <div class="fullscreen-video" id="fullscreenVideo">
+        <button class="close-fullscreen" onclick="closeFullscreenVideo()">
+            <i class="fas fa-times"></i>
+        </button>
+        <video controls id="fullscreenVideoPlayer">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <!-- Fallback Modal -->
+    <div class="fallback-modal" id="fallbackModal">
+        <div class="fallback-content">
+            <div class="fallback-icon">
+                <i class="fas fa-exclamation-triangle"></i>
+            </div>
+            <h2 class="fallback-title" id="fallbackTitle">Stripe Unavailable</h2>
+            <p class="fallback-message" id="fallbackMessage">
+                Stripe checkout is temporarily unavailable.<br>
+                Please use Telegram to complete your purchase.
+            </p>
+            <div class="fallback-buttons">
+                <button class="fallback-telegram-btn" id="fallbackTelegramBtn">
+                    <i class="fab fa-telegram"></i> Buy via Telegram
+                </button>
+                <button class="fallback-cancel-btn" onclick="closeFallbackModal()">
+                    Cancel
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Confirmation Page (Shown after Stripe payment) -->
+    <div class="confirmation-page" id="confirmationPage">
+        <div class="confirmation-content">
+            <div class="confirmation-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            
+            <h1 class="confirmation-title">Payment Successful! ✅</h1>
+            
+            <p class="confirmation-subtitle">
+                Thank you for your purchase! To receive your access, please follow these simple steps:
+            </p>
+            
+            <div class="confirmation-steps">
+                <div class="confirmation-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h4>Send Payment Receipt to Telegram</h4>
+                        <p>Open Telegram and send your payment receipt/screenshot to our support team. This is required for verification.</p>
+                    </div>
+                </div>
+                
+                <div class="confirmation-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h4>Wait for Verification</h4>
+                        <p>Our team will verify your payment (usually within 1-5 minutes). Please be patient.</p>
+                    </div>
+                </div>
+                
+                <div class="confirmation-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h4>Receive Your Access</h4>
+                        <p>Once verified, you'll receive a secure link with lifetime access to your purchased content.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="confirmation-telegram-box">
+                <h3 style="color: #0088cc; margin-bottom: 15px;">
+                    <i class="fab fa-telegram"></i> Contact on Telegram
+                </h3>
+                <p style="color: #aaa; margin-bottom: 15px;">
+                    Send your payment receipt/screenshot to our Telegram support team:
+                </p>
+                
+                <div class="telegram-contact">
+                    <div class="telegram-username">
+                        <i class="fab fa-telegram"></i> @bests_hot
+                    </div>
+                </div>
+                
+                <p style="color: #aaa; font-size: 0.9rem;">
+                    <i class="fas fa-info-circle"></i> Support available 24/7. Please include your email or username for faster service.
+                </p>
+            </div>
+            
+            <div class="confirmation-buttons">
+                <a href="https://t.me/bests_hot" target="_blank" class="confirmation-btn telegram">
+                    <i class="fab fa-telegram"></i> Open Telegram & Send Receipt
+                </a>
+                
+                <button onclick="returnToHome()" class="confirmation-btn home">
+                    <i class="fas fa-home"></i> Return to Homepage
+                </button>
+            </div>
+            
+            <div class="confirmation-note">
+                <p><i class="fas fa-clock"></i> Delivery time: 1-5 minutes after verification</p>
+                <p><i class="fas fa-shield-alt"></i> Your payment is secure and protected</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container" id="mainContent">
+        <!-- Activity Panel -->
+        <div class="activity-panel">
+            <div class="activity-header">
+                <h3>
+                    <i class="fas fa-chart-line"></i>
+                    Store Activity - LIVE
+                </h3>
+                <div class="live-dot"></div>
+            </div>
+            
+            <div class="activity-content">
+                <div class="live-users">
+                    <div class="live-dot"></div>
+                    <span id="liveStatus">Live: 12 people viewing products right now</span>
+                </div>
+                
+                <div class="recent-purchases" id="recentPurchases">
+                    <!-- Recent purchases will be loaded here -->
+                </div>
+            </div>
+        </div>
+        
+        <!-- All Content Preview Section -->
+        <div class="all-content-preview">
+            <div class="preview-header">
+                <i class="fas fa-crown"></i>
+                <h2>ALL CONTENT ACCESS 🔥</h2>
+                <i class="fas fa-crown"></i>
+            </div>
+            
+            <p class="preview-description">
+                🔥DONT MISS THIS PROMO🔥! Get access to ALL content including exclusive VIP channels.
+            </p>
+            
+            <!-- Video tabs -->
+            <div class="preview-video-tabs">
+                <button class="preview-video-tab active" onclick="switchPreviewVideo(1)">
+                    <i class="fas fa-video"></i> Preview 1
+                </button>
+                <button class="preview-video-tab" onclick="switchPreviewVideo(2)">
+                    <i class="fas fa-video"></i> Preview 2
+                </button>
+            </div>
+            
+            <div class="preview-video-container">
+                <video controls class="preview-video active" id="previewVideo1">
+                    <source src="https://files.catbox.moe/s7c5b0.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                
+                <video controls class="preview-video" id="previewVideo2">
+                    <source src="https://files.catbox.moe/aighkz.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                
+                <div class="preview-overlay">
+                    <div class="preview-badge">
+                        <i class="fas fa-fire"></i> LIMITED TIME
+                    </div>
+                </div>
+            </div>
+            
+            <div class="preview-price">
+                <span class="preview-old-price">$350</span>
+                <span>$200</span>
+            </div>
+            
+            <div class="preview-payment-options">
+                <button onclick="buyAllContentWithStripe()" class="stripe-btn">
+                    <i class="fab fa-stripe"></i> Pay with Stripe - $200
+                </button>
+                <button onclick="redirectToTelegramAllContent()" class="preview-btn">
+                    <i class="fab fa-telegram"></i> Pay via Telegram - $200
+                </button>
+                <div class="secure-badge">
+                    <i class="fas fa-shield-alt"></i> Both methods are 100% secure
+                </div>
+            </div>
+            
+            <div class="preview-stats">
+                <div class="stat-item">
+                    <span class="stat-number">12TB+</span>
+                    <span class="stat-label">Total Content</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">2000+</span>
+                    <span class="stat-label">Files</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">24/7</span>
+                    <span class="stat-label">Access</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Main Tabs Navigation -->
+        <div class="main-tabs">
+            <button class="main-tab active" onclick="switchMainTab('products')">
+                <i class="fas fa-folder"></i> PREMIUM FOLDERS
+            </button>
+            <button class="main-tab" onclick="switchMainTab('vip')">
+                <i class="fas fa-gem"></i> VIP CHANNELS/GROUPS
+            </button>
+        </div>
+        
+        <!-- Products & VIP Container -->
+        <div class="content-container">
+            <!-- Products Section -->
+            <div class="content-section active" id="productsSection">
+                <div class="products-grid" id="productsContainer">
+                    <!-- Products will be loaded here -->
+                </div>
+            </div>
+            
+            <!-- VIP Section -->
+            <div class="content-section" id="vipSection">
+                <div class="vip-grid" id="vipContainer">
+                    <!-- VIP channels will be loaded here -->
+                </div>
+            </div>
+        </div>
+        
+        <!-- FAQ Section -->
+        <div class="faq-section">
+            <h3><i class="fas fa-question-circle"></i> Frequently Asked Questions</h3>
+            <div class="faq-item">
+                <div class="faq-question"><i class="fas fa-question"></i> How fast is delivery?</div>
+                <div class="faq-answer">Instant delivery after payment confirmation via Telegram. Usually within 1-2 minutes.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question"><i class="fas fa-question"></i> Is payment secure?</div>
+                <div class="faq-answer">Yes! All payments are processed securely through Stripe (SSL encrypted) or Telegram with end-to-end encryption.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question"><i class="fas fa-question"></i> What payment methods do you accept?</div>
+                <div class="faq-answer">We accept Stripe (Credit/Debit cards), Bitcoin, CashApp, PayPal, Venmo, and other discreet payment methods.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question"><i class="fas fa-question"></i> Which payment method is faster?</div>
+                <div class="faq-answer">Stripe is instant automated delivery. Telegram requires manual verification but usually within 1-5 minutes.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question"><i class="fas fa-question"></i> How do I access my purchase?</div>
+                <div class="faq-answer">After Stripe payment, you'll get instant access. For Telegram, you'll receive a secure link with lifetime access.</div>
+            </div>
+        </div>
+        
+        <!-- Payment Section -->
+        <div class="payment-section">
+            <h3><i class="fas fa-lock"></i> Secure & Private Payment Options</h3>
+            <p>• Stripe: Instant automated delivery (Credit/Debit cards)</p>
+            <p>• Telegram: Manual processing with end-to-end encryption</p>
+            <p>• Your privacy is protected - no data sharing</p>
+            <p>• Discreet payment methods available</p>
+            <p>• Instant/rapid delivery after payment confirmation</p>
+        </div>
+        
+        <!-- Telegram Section -->
+        <div class="telegram-section">
+            <h3><i class="fab fa-telegram"></i> Contact for Support & Manual Payments</h3>
+            <p>Click "Telegram" payment option on any product or contact for support.</p>
+            <a href="https://t.me/bests_hot" target="_blank">
+                <i class="fab fa-telegram"></i> @bests_hot
+            </a>
+            <p style="margin-top: 10px; font-size: 0.75rem; color: #888;">
+                Support available 24/7 via Telegram
+            </p>
+        </div>
+        
+        <div class="disclaimer">
+            <p><i class="fas fa-info-circle"></i> You must be 18+ to access this content. All sales are final. By purchasing, you confirm you are of legal age in your jurisdiction.</p>
+        </div>
+    </div>
+
+    <script>
+        // CONFIGURATION
+        const CONFIG = {
+            // Telegram configuration
+            telegram: "bests_hot",
+            
+            // Stripe configuration
+            stripeEnabled: true,
+            stripeFallbackToTelegram: true,
+            
+            // All Content Access Stripe URL
+            allContentStripeUrl: "https://buy.stripe.com/9B69AUgFhfoz3xifT42VG0j",
+            
+            // URL parameters for success page
+            successParam: "payment_success",
+            productIdParam: "product_id",
+            
+            // List of names for rotation every 10 minutes
+            buyerNames: [
+                "Alex Johnson", "Maria Garcia", "David Smith", "Sarah Wilson", "James Brown", 
+                "Emma Davis", "Michael Taylor", "Lisa Martinez", "Robert Wilson", "Jennifer Lee",
+                "Kevin Anderson", "Olivia Parker", "Daniel Clark", "Sophia Rodriguez", "Matthew White",
+                "Isabella Thompson", "William Harris", "Mia Martin", "Joseph Walker", "Charlotte Lewis",
+                "Christopher Hall", "Amelia Young", "Andrew Allen", "Harper King", "Joshua Wright",
+                "Evelyn Scott", "Ryan Green", "Abigail Adams", "Nicholas Baker", "Emily Nelson"
+            ],
+            
+            // VIP Channels/Groups
+            vipChannels: [
+                {
+                    id: 101,
+                    name: "VIP CP,R@PE,INCEST",
+                    price: 95,
+                    videoPreview: "https://files.catbox.moe/0ry1f8.mp4",
+                    description: "Exclusive CP content updated daily. Private channel with 500+ members. Lifetime access.",
+                    members: "500+",
+                    updates: "Daily",
+                    content: "643GB+",
+                    stripeUrl: "https://buy.stripe.com/cNifZi0Gjekvc3OeP02VG0i"
+                },
+                {
+                    id: 102,
+                    name: "GROUP VIP CP",
+                    price: 70,
+                    videoPreview: "https://files.catbox.moe/wdq340.mp4",
+                    description: "Private CP content channel. Real families, exclusive videos. Weekly updates.",
+                    members: "300+",
+                    updates: "Weekly",
+                    content: "1.5TB+",
+                    stripeUrl: "https://buy.stripe.com/6oUbJ21Knccn6Ju0Ya2VG07"
+                },
+                {
+                    id: 103,
+                    name: "SKI 13-17 PYT",
+                    price: 65,
+                    videoPreview: "https://files.catbox.moe/saln80.mp4",
+                    description: "Teen exclusive content. Ages 13-17. Private Telegram group with active community.",
+                    members: "400+",
+                    updates: "Daily",
+                    content: "300GB+",
+                    stripeUrl: "https://buy.stripe.com/cNieVe1Knccn9VG8qC2VG06"
+                },
+                {
+                    id: 104,
+                    name: "SKI HIGH SCHOOL PYT",
+                    price: 50,
+                    videoPreview: "https://files.catbox.moe/f7b6ty.mp4",
+                    description: "Exclusive high school teen content channel. Real videos, premium quality. Private access only.",
+                    members: "250+",
+                    updates: "Weekly",
+                    content: "250GB+",
+                    stripeUrl: "https://buy.stripe.com/aFa5kE3Sv1xJc3OeP02VG03"
+                },
+                {
+                    id: 105,
+                    name: "ALL CATEGORIES GROUP",
+                    price: 175,
+                    videoPreview: "https://files.catbox.moe/5kgj3i.mp4",
+                    description: "Complete package - all categories in one group. CP, incest, teens, blackmail. Everything.",
+                    members: "600+",
+                    updates: "Daily",
+                    content: "5TB+",
+                    stripeUrl: "https://buy.stripe.com/test_dR6eWkbhC4sh1UY5kk"
+                }
+            ],
+            
+            // Products
+            products: [
+                {
+                    id: 1,
+                    name: "MOM AND SON😋💜",
+                    price: 25,
+                    image: "https://imagizer.imageshack.com/img922/1129/46KdQI.jpg",
+                    videoPreview: "https://files.catbox.moe/4nxlv1.mp4",
+                    description: [
+                        "✅ REAL GIRLS",
+                        "✅ YOUNG BOY", 
+                        "✅ MOM AND SON",
+                        "✅ 228 FILES",
+                        "✅ 12.45 GB"
+                    ],
+                    bestSeller: true,
+                    purchaseCount: 42,
+                    stripeUrl: "https://buy.stripe.com/dRm00k88L4JV8RC6iu2VG0g"
+                },
+                {
+                    id: 2,
+                    name: "LIZZY AND BRO🔥",
+                    price: 25,
+                    image: "https://imagizer.imageshack.com/img921/5505/LKytJu.jpg",
+                    videoPreview: "https://files.catbox.moe/m67swh.mp4",
+                    description: [
+                        "✅ BLACKMAIL VIDEOS",
+                        "✅ TRAINING VIDEOS",
+                        "✅ INCEST"
+                    ],
+                    bestSeller: true,
+                    purchaseCount: 28,
+                    stripeUrl: "https://buy.stripe.com/dRm00k88L4JV8RC6iu2VG0g"
+                },
+                {
+                    id: 3,
+                    name: "ALL CP COLLETION",
+                    price: 95,
+                    image: "https://files.catbox.moe/v6gcc8.jpeg",
+                    videoPreview: "https://files.catbox.moe/kmybnf.mp4",
+                    description: [
+                        "✅ CP 2GB",
+                        "✅ CP 4GB",
+                        "✅ Premium content",
+                        "✅ CP VIP 8GB"
+                    ],
+                    purchaseCount: 56,
+                    stripeUrl: "https://buy.stripe.com/cNifZi0Gjekvc3OeP02VG0i"
+                },
+                {
+                    id: 4,
+                    name: "ALL TEENS COLLETION😈",
+                    price: 70,
+                    image: "https://i.postimg.cc/rpGnDhMS/IMG_4450.jpg",
+                    videoPreview: "https://files.catbox.moe/fbzp37.mp4",
+                    description: [
+                        "✅ OVER 1867 VIDEOS",
+                        "✅ MORE THAN 200 SUBFOLDERS",
+                        "✅ INCEST",
+                        "✅ ALL TEENS"
+                    ],
+                    bestSeller: true,
+                    purchaseCount: 73,
+                    stripeUrl: "https://buy.stripe.com/6oUbJ21Knccn6Ju0Ya2VG07"
+                },
+                {
+                    id: 5,
+                    name: "SNAPGOD FULL EDITION",
+                    price: 35,
+                    image: "https://imagizer.imageshack.com/img921/9696/oQEkoe.jpg",
+                    videoPreview: "https://files.catbox.moe/aighkz.mp4",
+                    description: [
+                        "✅ BLACKMAIL VIDEOS",
+                        "✅ INCEST TEENS",
+                        "✅ 40GB",
+                        "✅ TRAINING AND SEXY"
+                    ],
+                    purchaseCount: 19,
+                    stripeUrl: "https://buy.stripe.com/14AaEY3Sv90b8RC0Ya2VG0e"
+                },
+                {
+                    id: 6,
+                    name: "OMEGLE FULL💜",
+                    price: 35,
+                    image: "https://imagizer.imageshack.com/img924/1222/5M0MZ5.jpg",
+                    videoPreview: "https://files.catbox.moe/cs6il8.mp4",
+                    description: [
+                        "✅ 140GB+",
+                        "✅ FULL CONTENT",
+                        "✅ RARE NEW COLLETION",
+                        "✅ OMEGLE VIDEOS UPDATE"
+                    ],
+                    purchaseCount: 31,
+                    stripeUrl: "https://buy.stripe.com/14AaEY3Sv90b8RC0Ya2VG0e"
+                },
+                {
+                    id: 7,
+                    name: "NEW STUFF PYT",
+                    price: 40,
+                    image: "https://files.catbox.moe/9ub4vc.webp",
+                    videoPreview: "https://files.catbox.moe/3005yz.mp4",
+                    description: [
+                        "✅ Premium folder",
+                        "✅ 13-17",
+                        "✅ 32GB"
+                    ],
+                    purchaseCount: 24,
+                    stripeUrl: "https://buy.stripe.com/00w5kEbkX90b6JufT42VG01"
+                },
+                {
+                    id: 8,
+                    name: "HIGH SCHOOL THOTS",
+                    price: 30,
+                    image: "https://files.catbox.moe/why1n3.webp",
+                    videoPreview: "https://files.catbox.moe/ehv39q.mp4",
+                    description: [
+                        "✅ HIGH SCHOOL",
+                        "✅ 340GB",
+                        "✅ 13-17y",
+                        "✅ LIGHTSKIN and more..."
+                    ],
+                    bestSeller: true,
+                    purchaseCount: 88,
+                    stripeUrl: "https://buy.stripe.com/test_dR6eWkbhC4sh1UY5kk"
+                },
+                {
+                    id: 9,
+                    name: "IZZY AND DOG🔥‼️",
+                    price: 25,
+                    image: "https://files.catbox.moe/4av8s1.webp",
+                    videoPreview: "https://files.catbox.moe/fjih2t.mp4",
+                    description: [
+                        "✅ BLACKMAIL",
+                        "✅ REAL GIRL",
+                        "✅ SOLO STUFF",
+                        "✅ Full access"
+                    ],
+                    purchaseCount: 36,
+                    stripeUrl: "https://buy.stripe.com/9B6bJ2dt5ccnfg07my2VG0h"
+                },
+                {
+                    id: 10,
+                    name: "DARKZEID🔞",
+                    price: 25,
+                    image: "https://files.catbox.moe/35af27.webp",
+                    videoPreview: "https://files.catbox.moe/r03guy.mp4",
+                    description: [
+                        "✅ ALL BM VIDEOS",
+                        "✅ ALL CAMERAS UPLOADS",
+                        "✅ 20GB",
+                        "✅ FULL NUDE CONTENT"
+                    ],
+                    purchaseCount: 17,
+                    stripeUrl: "https://buy.stripe.com/dRm00k88L4JV8RC6iu2VG0g"
+                },
+                {
+                    id: 11,
+                    name: "SNAPCHAT FULL🔥",
+                    price: 30,
+                    image: "https://files.catbox.moe/cy5gf8.webp",
+                    videoPreview: "https://files.catbox.moe/6a6glj.mp4",
+                    description: [
+                        "✅ 500+ VIDEOS",
+                        "✅ AGES 16-19",
+                        "✅ EXCLUSIVE CONTENT",
+                        "✅ 25GB COLLECTION"
+                    ],
+                    bestSeller: true,
+                    purchaseCount: 29,
+                    stripeUrl: "https://buy.stripe.com/9B6bJ2dt5ccnfg07my2VG0h"
+                },
+                {
+                    id: 12,
+                    name: "INVAKA💀",
+                    price: 25,
+                    image: "https://files.catbox.moe/zihl72.webp",
+                    videoPreview: "https://files.catbox.moe/qjg3gu.mp4",
+                    description: [
+                        "✅ 300+ VIDS",
+                        "✅ REAL GIRL",
+                        "✅ FULL HD QUALITY",
+                        "✅ 15GB TOTAL"
+                    ],
+                    purchaseCount: 41,
+                    stripeUrl: "https://buy.stripe.com/dRm00k88L4JV8RC6iu2VG0g"
+                },
+                {
+                    id: 13,
+                    name: "AVA SHIT",
+                    price: 25,
+                    image: "https://files.catbox.moe/xupz6u.webp",
+                    videoPreview: "https://files.catbox.moe/yzb7jo.mp4",
+                    description: [
+                        "✅ BM VIDEOS",
+                        "✅ INCEST",
+                        "✅ CP",
+                        "✅ MORE THAN 350+ VIDEOS"
+                    ],
+                    bestSeller: true,
+                    purchaseCount: 37,
+                    stripeUrl: "https://buy.stripe.com/dRm00k88L4JV8RC6iu2VG0g"
+                },
+                {
+                    id: 15,
+                    name: "MONKEYAPP🎓",
+                    price: 25,
+                    image: "https://files.catbox.moe/4cy5ej.jpeg",
+                    videoPreview: "https://files.catbox.moe/as6vwa.mp4",
+                    description: [
+                        "✅ AGES 13-17",
+                        "✅ DORM ROOM VIDEOS",
+                        "✅ 400+ FILES",
+                        "✅ 20GB COLLECTION"
+                    ],
+                    purchaseCount: 22,
+                    stripeUrl: "https://buy.stripe.com/dRm00k88L4JV8RC6iu2VG0g"
+                },
+                {
+                    id: 16,
+                    name: "DESIRE GARCIA",
+                    price: 25,
+                    image: "https://files.catbox.moe/nf0esh.webp",
+                    videoPreview: "https://files.catbox.moe/mqt4dn.mp4",
+                    description: [
+                        "✅ HIGH QUALITY",
+                        "✅ RARE CONTENT",
+                        "✅ 340+ VIDEOS",
+                        "✅ 56GB CONTENT"
+                    ],
+                    bestSeller: true,
+                    purchaseCount: 45,
+                    stripeUrl: "https://buy.stripe.com/dRm00k88L4JV8RC6iu2VG0g"
+                },
+                {
+                    id: 17,
+                    name: "BLACKMAIIL FULL💦",
+                    price: 30,
+                    image: "https://files.catbox.moe/dlk7kl.webp",
+                    videoPreview: "https://files.catbox.moe/nuegam.mp4",
+                    description: [
+                        "✅ AGES 14-17",
+                        "✅ 870+ VIDS",
+                        "✅ HD QUALITY",
+                        "✅ 200GB COLLECTION"
+                    ],
+                    purchaseCount: 58,
+                    stripeUrl: "https://buy.stripe.com/9B6bJ2dt5ccnfg07my2VG0h"
+                },
+                {
+                    id: 19,
+                    name: "BABY ASHLEY",
+                    price: 20,
+                    image: "https://files.catbox.moe/rz4xqi.webp",
+                    videoPreview: "https://files.catbox.moe/qhve7i.mp4",
+                    description: [
+                        "✅ 100% YOUNG GIRL",
+                        "✅ LOCKER ROOM VIDS",
+                        "✅ 300+ FILES",
+                        "✅ 12GB CONTENT"
+                    ],
+                    bestSeller: true,
+                    purchaseCount: 49,
+                    stripeUrl: "https://buy.stripe.com/fZufZi88L2BN9VGdKW2VG0f"
+                },
+                {
+                    id: 21,
+                    name: "AMELIA BLONDE🔥",
+                    price: 25,
+                    image: "https://files.catbox.moe/45mzkb.webp",
+                    videoPreview: "https://files.catbox.moe/7tffl2.mp4",
+                    description: [
+                        "✅ 500+ EXCLUSIVE VIDEOS",
+                        "✅ AGES 11",
+                        "✅ 30GB TOTAL SIZE",
+                        "✅ REAL GIRLS",
+                        "✅ HIGH QUALITY"
+                    ],
+                    bestSeller: true,
+                    purchaseCount: 38,
+                    stripeUrl: "https://buy.stripe.com/dRm00k88L4JV8RC6iu2VG0g"
+                },
+                {
+                    id: 22,
+                    name: "CP-1",
+                    price: 30,
+                    image: "https://files.catbox.moe/xkwvfb.webp",
+                    videoPreview: "https://files.catbox.moe/ado484.mp4",
+                    description: [
+                        "✅ RARE",
+                        "✅ AGES 9-11",
+                        "✅ 300+ VIDEOS",
+                        "✅ 38GB COLLECTION",
+                        "✅ NEVER BEFORE SEEN"
+                    ],
+                    purchaseCount: 24,
+                    stripeUrl: "https://buy.stripe.com/9B6bJ2dt5ccnfg07my2VG0h"
+                },
+                {
+                    id: 23,
+                    name: "CP-2",
+                    price: 30,
+                    image: "https://files.catbox.moe/palmho.webp",
+                    videoPreview: "https://files.catbox.moe/fysysq.mp4",
+                    description: [
+                        "✅ BEST C-P",
+                        "✅ HIGH QUALITY",
+                        "✅ RARE CONTENT",
+                        "✅ 350+ VIDEOS",
+                        "✅ 20GB HIGH QUALITY"
+                    ],
+                    bestSeller: true,
+                    purchaseCount: 42,
+                    stripeUrl: "https://buy.stripe.com/9B6bJ2dt5ccnfg07my2VG0h"
+                },
+                {
+                    id: 24,
+                    name: "ANXIOUS PANDA",
+                    price: 20,
+                    image: "https://files.catbox.moe/p5t7u9.webp",
+                    videoPreview: "https://files.catbox.moe/nvpys0.mp4",
+                    description: [
+                        "✅ AGES 13-16 ",
+                        "✅ BEST",
+                        "✅ 200+ VIDS",
+                        "✅ BEHIND THE SCENES",
+                        "✅ 35GB TOTAL"
+                    ],
+                    purchaseCount: 19,
+                    stripeUrl: "https://buy.stripe.com/fZufZi88L2BN9VGdKW2VG0f"
+                },
+                {
+                    id: 25,
+                    name: "REAL INCEST 💀",
+                    price: 25,
+                    image: "https://files.catbox.moe/wronh2.jpeg",
+                    videoPreview: "https://files.catbox.moe/ef13ye.mp4",
+                    description: [
+                        "✅ 1000+ ",
+                        "✅ ALL AGES 9y",
+                        "✅ 50GB MEGA COLLECTION",
+                        "✅ ORGANIZED BY CATEGORY",
+                        "✅ HD"
+                    ],
+                    bestSeller: true,
+                    purchaseCount: 57,
+                    stripeUrl: "https://buy.stripe.com/dRm00k88L4JV8RC6iu2VG0g"
+                },
+                {
+                    id: 26,
+                    name: "XIMENA TEEN",
+                    price: 25,
+                    image: "https://i.postimg.cc/sXd810P5/IMG-5360.jpg",
+                    videoPreview: "https://files.catbox.moe/yn5iuk.mp4",
+                    description: [
+                        "✅ RARE TEEN",
+                        "✅ BEST STUFF",
+                        "✅ 12y",
+                        "✅ HIGH QUALITY",
+                        "✅ 44GB"
+                    ],
+                    bestSeller: true,
+                    purchaseCount: 31,
+                    stripeUrl: "https://buy.stripe.com/dRm00k88L4JV8RC6iu2VG0g"
+                },
+                {
+                    id: 27,
+                    name: "CP - 3",
+                    price: 30,
+                    image: "https://files.catbox.moe/chgfc9.jpeg",
+                    videoPreview: "https://files.catbox.moe/ka9zo9.mp4",
+                    description: [
+                        "✅ VIP CP CONTENT",
+                        "✅ AGES 8-12",
+                        "✅ 500+ VIDEOS",
+                        "✅ 50GB HIGH QUALITY",
+                        "✅ EXCLUSIVE ACCESS"
+                    ],
+                    bestSeller: true,
+                    purchaseCount: 45,
+                    stripeUrl: "https://buy.stripe.com/9B6bJ2dt5ccnfg07my2VG0h"
+                },
+                {
+                    id: 28,
+                    name: "CP - 4",
+                    price: 30,
+                    image: "https://files.catbox.moe/7ghzyc.jpeg",
+                    videoPreview: "https://files.catbox.moe/ay273q.mp4",
+                    description: [
+                        "✅ CP VIDEOS",
+                        "✅ AGES 9-13",
+                        "✅ 300+ EXCLUSIVE",
+                        "✅ 35GB TOTAL",
+                        "✅ REAL GIRLS"
+                    ],
+                    purchaseCount: 38,
+                    stripeUrl: "https://buy.stripe.com/9B6bJ2dt5ccnfg07my2VG0h"
+                },
+                {
+                    id: 32,
+                    name: "CP 5",
+                    price: 35,
+                    image: "https://files.catbox.moe/kzmjxh.png",
+                    videoPreview: "https://files.catbox.moe/eytuhf.mp4",
+                    description: [
+                        "✅ 1000+ EXCLUSIVE VIDEOS",
+                        "✅ AGES 6-9 ONLY",
+                        "✅ 85GB PREMIUM CONTENT",
+                        "✅ HIGH QUALITY",
+                        "✅ NEVER BEFORE SEEN"
+                    ],
+                    bestSeller: true,
+                    purchaseCount: 52,
+                    stripeUrl: "https://buy.stripe.com/14AaEY3Sv90b8RC0Ya2VG0e"
+                },
+                {
+                    id: 33,
+                    name: "VIP OMEGLE",
+                    price: 30,
+                    image: "",
+                    videoPreview: "https://files.catbox.moe/un265s.mp4",
+                    description: [
+                        "✅ REAL BLACKMAIL VIDEOS",
+                        "✅ 650+ EXCLUSIVE FILES",
+                        "✅ 42GB TOTAL SIZE",
+                        "✅ AGES 13-17",
+                        "✅ HD QUALITY RECORDINGS"
+                    ],
+                    bestSeller: true,
+                    purchaseCount: 41,
+                    stripeUrl: "https://buy.stripe.com/9B6bJ2dt5ccnfg07my2VG0h"
+                }
+            ]
+        };
+
+        // Show main content immediately
+        function showContent() {
+            // First check if we should show the confirmation page
+            checkForSuccessPage();
+            
+            // Then render normal content
+            renderProducts();
+            renderVIPChannels();
+            initializeActivitySimulation();
+        }
+
+        // Check URL for success parameter
+        function checkForSuccessPage() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const paymentSuccess = urlParams.get('payment_success');
+            const productId = urlParams.get('product_id');
+            
+            if (paymentSuccess === 'true') {
+                showConfirmationPage(productId);
+            }
+        }
+
+        // Show confirmation page after Stripe payment
+        function showConfirmationPage(productId) {
+            const confirmationPage = document.getElementById('confirmationPage');
+            const mainContent = document.getElementById('mainContent');
+            
+            if (confirmationPage && mainContent) {
+                confirmationPage.classList.add('active');
+                mainContent.style.display = 'none';
+                
+                // Scroll to top
+                window.scrollTo(0, 0);
+                
+                // Clear URL parameters without reloading
+                const newUrl = window.location.pathname;
+                window.history.replaceState({}, document.title, newUrl);
+            }
+        }
+
+        // Return to homepage from confirmation page
+        function returnToHome() {
+            const confirmationPage = document.getElementById('confirmationPage');
+            const mainContent = document.getElementById('mainContent');
+            
+            if (confirmationPage && mainContent) {
+                confirmationPage.classList.remove('active');
+                mainContent.style.display = 'block';
+                
+                // Scroll to top
+                window.scrollTo(0, 0);
+            }
+        }
+
+        // Modify Stripe URLs to redirect back to confirmation page
+        function getStripeUrlWithRedirect(baseUrl, productId = null, isAllContent = false) {
+            let redirectUrl = window.location.origin + window.location.pathname;
+            
+            if (isAllContent) {
+                redirectUrl += '?payment_success=true&product=all_content';
+            } else if (productId) {
+                redirectUrl += `?payment_success=true&product_id=${productId}`;
+            } else {
+                redirectUrl += '?payment_success=true';
+            }
+            
+            // Encode the redirect URL
+            const encodedRedirectUrl = encodeURIComponent(redirectUrl);
+            
+            // Add to Stripe URL (this assumes Stripe supports success_url parameter)
+            // Note: You might need to configure this in your Stripe dashboard
+            return `${baseUrl}?success_url=${encodedRedirectUrl}`;
+        }
+
+        // Function to switch main tabs
+        function switchMainTab(tabName) {
+            // Update tabs
+            document.querySelectorAll('.main-tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            
+            const tabs = document.querySelectorAll('.main-tab');
+            if (tabName === 'products') {
+                tabs[0].classList.add('active');
+            } else {
+                tabs[1].classList.add('active');
+            }
+            
+            // Update content sections
+            document.querySelectorAll('.content-section').forEach(section => {
+                section.classList.remove('active');
+            });
+            
+            document.getElementById(`${tabName}Section`).classList.add('active');
+        }
+
+        // Function to switch preview videos
+        function switchPreviewVideo(videoNumber) {
+            // Update tabs
+            document.querySelectorAll('.preview-video-tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            document.querySelector(`.preview-video-tab:nth-child(${videoNumber})`).classList.add('active');
+            
+            // Update videos
+            document.querySelectorAll('.preview-video').forEach(video => {
+                video.classList.remove('active');
+            });
+            
+            const activeVideo = document.getElementById(`previewVideo${videoNumber}`);
+            activeVideo.classList.add('active');
+        }
+
+        // Function to play video in fullscreen
+        function playFullscreenVideo(videoUrl) {
+            const fullscreenVideo = document.getElementById('fullscreenVideo');
+            const videoPlayer = document.getElementById('fullscreenVideoPlayer');
+            
+            videoPlayer.src = videoUrl;
+            fullscreenVideo.classList.add('active');
+            
+            // Play the video
+            videoPlayer.load();
+            videoPlayer.play().catch(e => {
+                console.log("Autoplay prevented, user must click play");
+            });
+        }
+
+        // Function to close fullscreen video
+        function closeFullscreenVideo() {
+            const fullscreenVideo = document.getElementById('fullscreenVideo');
+            const videoPlayer = document.getElementById('fullscreenVideoPlayer');
+            
+            videoPlayer.pause();
+            videoPlayer.src = '';
+            fullscreenVideo.classList.remove('active');
+        }
+
+        // Close fullscreen when clicking outside the video
+        document.addEventListener('click', function(event) {
+            const fullscreenVideo = document.getElementById('fullscreenVideo');
+            const videoPlayer = document.getElementById('fullscreenVideoPlayer');
+            
+            if (fullscreenVideo.classList.contains('active') && !videoPlayer.contains(event.target) && !event.target.classList.contains('close-fullscreen')) {
+                closeFullscreenVideo();
+            }
+        });
+
+        // Function to redirect to Telegram for individual products
+        function redirectToTelegram(productId) {
+            const product = CONFIG.products.find(p => p.id === productId);
+            if (!product) return;
+            
+            // Encode message for URL
+            const message = encodeURIComponent(`Hello! I'm interested in purchasing: "${product.name}" for $${product.price}. Please send payment instructions.`);
+            
+            // Create Telegram URL
+            const telegramUrl = `https://t.me/${CONFIG.telegram}?text=${message}`;
+            
+            // Open Telegram in new tab
+            window.open(telegramUrl, '_blank', 'noopener,noreferrer');
+        }
+
+        // Function to redirect to Telegram for VIP channels
+        function redirectToTelegramVIP(vipId) {
+            const vip = CONFIG.vipChannels.find(v => v.id === vipId);
+            if (!vip) return;
+            
+            const message = encodeURIComponent(`Hello! I'm interested in VIP access to: "${vip.name}" for $${vip.price}. Please send payment instructions.`);
+            
+            const telegramUrl = `https://t.me/${CONFIG.telegram}?text=${message}`;
+            window.open(telegramUrl, '_blank', 'noopener,noreferrer');
+        }
+
+        // Function to redirect to Telegram for ALL CONTENT
+        function redirectToTelegramAllContent() {
+            const message = encodeURIComponent(`Hello! I'm interested in the COMPLETE "ALL CONTENT ACCESS" package for $200. Please send payment instructions.`);
+            
+            // Create Telegram URL
+            const telegramUrl = `https://t.me/${CONFIG.telegram}?text=${message}`;
+            
+            // Open Telegram in new tab
+            window.open(telegramUrl, '_blank', 'noopener,noreferrer');
+        }
+
+        // Function to show fallback modal
+        function showFallbackModal(productId = null, vipId = null, isAllContent = false) {
+            const modal = document.getElementById('fallbackModal');
+            const title = document.getElementById('fallbackTitle');
+            const message = document.getElementById('fallbackMessage');
+            const telegramBtn = document.getElementById('fallbackTelegramBtn');
+            
+            if (isAllContent) {
+                title.textContent = "ALL CONTENT ACCESS - Stripe Unavailable";
+                message.textContent = "Stripe checkout for ALL CONTENT ACCESS is temporarily unavailable. Please use Telegram to complete your purchase.";
+                telegramBtn.onclick = function() {
+                    redirectToTelegramAllContent();
+                    closeFallbackModal();
+                };
+            } else if (productId) {
+                const product = CONFIG.products.find(p => p.id === productId);
+                title.textContent = `${product.name} - Stripe Unavailable`;
+                message.textContent = `Stripe checkout for "${product.name}" is temporarily unavailable. Please use Telegram to complete your $${product.price} purchase.`;
+                telegramBtn.onclick = function() {
+                    redirectToTelegram(productId);
+                    closeFallbackModal();
+                };
+            } else if (vipId) {
+                const vip = CONFIG.vipChannels.find(v => v.id === vipId);
+                title.textContent = `${vip.name} - Stripe Unavailable`;
+                message.textContent = `Stripe checkout for "${vip.name}" is temporarily unavailable. Please use Telegram to complete your $${vip.price} purchase.`;
+                telegramBtn.onclick = function() {
+                    redirectToTelegramVIP(vipId);
+                    closeFallbackModal();
+                };
+            }
+            
+            modal.classList.add('active');
+        }
+
+        // Function to close fallback modal
+        function closeFallbackModal() {
+            const modal = document.getElementById('fallbackModal');
+            modal.classList.remove('active');
+        }
+
+        // Function to buy with Stripe with automatic fallback
+        function buyWithStripe(productId, stripeUrl, productName, price) {
+            if (!stripeUrl || stripeUrl === "https://buy.stripe.com/..." || stripeUrl.includes("test_dR6")) {
+                // Se não configurado ou ainda usando link de exemplo
+                showFallbackModal(productId, null, false);
+                return;
+            }
+            
+            // Adiciona parâmetro de redirecionamento
+            const stripeUrlWithRedirect = getStripeUrlWithRedirect(stripeUrl, productId, false);
+            
+            // Tenta abrir o Stripe em uma nova janela
+            const stripeWindow = window.open(stripeUrlWithRedirect, '_blank', 'noopener,noreferrer');
+            
+            // Verifica se a janela foi bloqueada
+            if (!stripeWindow || stripeWindow.closed || typeof stripeWindow.closed === 'undefined') {
+                // Se foi bloqueado, mostra fallback
+                if (CONFIG.stripeFallbackToTelegram) {
+                    showFallbackModal(productId, null, false);
+                } else {
+                    alert("Stripe checkout was blocked. Please disable your pop-up blocker or use Telegram.");
+                }
+                return;
+            }
+            
+            // Se chegou aqui, a janela foi aberta com sucesso
+            console.log("Stripe checkout opened successfully");
+        }
+
+        // Function to buy VIP with Stripe
+        function buyVIPWithStripe(vipId, stripeUrl, vipName, price) {
+            if (!stripeUrl || stripeUrl === "https://buy.stripe.com/..." || stripeUrl.includes("test_dR6")) {
+                showFallbackModal(null, vipId, false);
+                return;
+            }
+            
+            // Adiciona parâmetro de redirecionamento
+            const stripeUrlWithRedirect = getStripeUrlWithRedirect(stripeUrl, `vip_${vipId}`, false);
+            
+            const stripeWindow = window.open(stripeUrlWithRedirect, '_blank', 'noopener,noreferrer');
+            
+            if (!stripeWindow || stripeWindow.closed || typeof stripeWindow.closed === 'undefined') {
+                if (CONFIG.stripeFallbackToTelegram) {
+                    showFallbackModal(null, vipId, false);
+                }
+                return;
+            }
+            
+            console.log("Stripe VIP checkout opened successfully");
+        }
+
+        // Function to buy ALL CONTENT with Stripe
+        function buyAllContentWithStripe() {
+            if (!CONFIG.allContentStripeUrl || CONFIG.allContentStripeUrl === "https://buy.stripe.com/..." || CONFIG.allContentStripeUrl.includes("test_dR6")) {
+                showFallbackModal(null, null, true);
+                return;
+            }
+            
+            // Adiciona parâmetro de redirecionamento
+            const stripeUrlWithRedirect = getStripeUrlWithRedirect(CONFIG.allContentStripeUrl, null, true);
+            
+            const stripeWindow = window.open(stripeUrlWithRedirect, '_blank', 'noopener,noreferrer');
+            
+            if (!stripeWindow || stripeWindow.closed || typeof stripeWindow.closed === 'undefined') {
+                if (CONFIG.stripeFallbackToTelegram) {
+                    showFallbackModal(null, null, true);
+                }
+                return;
+            }
+            
+            console.log("Stripe ALL CONTENT checkout opened successfully");
+        }
+
+        // Function to switch payment method for products
+        function switchPaymentMethod(productId, method) {
+            const productCard = document.getElementById(`product-${productId}`);
+            if (!productCard) return;
+            
+            // Atualiza tabs
+            const telegramTab = productCard.querySelector('.payment-method-tab[data-method="telegram"]');
+            const stripeTab = productCard.querySelector('.payment-method-tab[data-method="stripe"]');
+            
+            telegramTab.classList.remove('active');
+            stripeTab.classList.remove('active');
+            
+            if (method === 'telegram') {
+                telegramTab.classList.add('active');
+            } else {
+                stripeTab.classList.add('active');
+            }
+            
+            // Atualiza conteúdo
+            const telegramContent = productCard.querySelector('.telegram-payment');
+            const stripeContent = productCard.querySelector('.stripe-payment');
+            
+            telegramContent.classList.remove('active');
+            stripeContent.classList.remove('active');
+            
+            if (method === 'telegram') {
+                telegramContent.classList.add('active');
+            } else {
+                stripeContent.classList.add('active');
+            }
+        }
+
+        // Function to switch payment method for VIP
+        function switchPaymentMethodVIP(vipId, method) {
+            const vipCard = document.getElementById(`vip-${vipId}`);
+            if (!vipCard) return;
+            
+            // Atualiza tabs
+            const telegramTab = vipCard.querySelector('.payment-method-tab[data-method="telegram"]');
+            const stripeTab = vipCard.querySelector('.payment-method-tab[data-method="stripe"]');
+            
+            telegramTab.classList.remove('active');
+            stripeTab.classList.remove('active');
+            
+            if (method === 'telegram') {
+                telegramTab.classList.add('active');
+            } else {
+                stripeTab.classList.add('active');
+            }
+            
+            // Atualiza conteúdo
+            const telegramContent = vipCard.querySelector('.telegram-payment');
+            const stripeContent = vipCard.querySelector('.stripe-payment');
+            
+            telegramContent.classList.remove('active');
+            stripeContent.classList.remove('active');
+            
+            if (method === 'telegram') {
+                telegramContent.classList.add('active');
+            } else {
+                stripeContent.classList.add('active');
+            }
+        }
+
+        // Activity Simulation System
+        class ActivitySimulator {
+            constructor() {
+                this.lastUpdate = new Date();
+                this.purchaseInterval = null;
+                this.nameRotationInterval = null;
+                this.currentBuyers = this.generateRandomBuyers();
+                this.nameRotationCounter = 0;
+            }
+            
+            randomInt(min, max) {
+                return Math.floor(Math.random() * (max - min + 1)) + min;
+            }
+            
+            // Generate initial random buyers
+            generateRandomBuyers() {
+                const buyers = [];
+                const productCount = CONFIG.products.length;
+                
+                for (let i = 0; i < 8; i++) {
+                    const randomName = CONFIG.buyerNames[this.randomInt(0, CONFIG.buyerNames.length - 1)];
+                    const randomProduct = CONFIG.products[this.randomInt(0, productCount - 1)];
+                    const timeOptions = ["just now", "1 min ago", "2 min ago", "3 min ago", "4 min ago", "5 min ago"];
+                    
+                    buyers.push({
+                        name: randomName,
+                        product: randomProduct.name,
+                        amount: randomProduct.price,
+                        time: timeOptions[this.randomInt(0, timeOptions.length - 1)]
+                    });
+                }
+                
+                return buyers;
+            }
+            
+            // Rotate names every 10 minutes
+            rotateBuyerNames() {
+                this.nameRotationCounter++;
+                
+                const productCount = CONFIG.products.length;
+                const timeOptions = ["just now", "1 min ago", "2 min ago", "3 min ago", "4 min ago", "5 min ago"];
+                
+                // Update some buyers with new names
+                for (let i = 0; i < this.currentBuyers.length; i++) {
+                    if (Math.random() > 0.5) { // 50% chance to change each name
+                        this.currentBuyers[i].name = CONFIG.buyerNames[this.randomInt(0, CONFIG.buyerNames.length - 1)];
+                        this.currentBuyers[i].time = timeOptions[this.randomInt(0, timeOptions.length - 1)];
+                    }
+                }
+                
+                this.renderRecentPurchases();
+            }
+            
+            initialize() {
+                this.renderRecentPurchases();
+                this.startSimulation();
+                
+                // Start name rotation every 10 minutes
+                this.nameRotationInterval = setInterval(() => {
+                    this.rotateBuyerNames();
+                }, 10 * 60 * 1000);
+                
+                // Update live status
+                this.updateLiveStatus();
+            }
+            
+            updateLiveStatus() {
+                const viewingProducts = this.randomInt(8, 20);
+                document.getElementById('liveStatus').textContent = 
+                    `Live: ${viewingProducts} people viewing products right now`;
+            }
+            
+            startSimulation() {
+                // Update live status every 15-30 seconds
+                setInterval(() => {
+                    this.updateLiveStatus();
+                }, this.randomInt(15000, 30000));
+                
+                // Update purchases every 45-90 seconds
+                this.purchaseInterval = setInterval(() => {
+                    this.addNewPurchase();
+                }, this.randomInt(45000, 90000));
+            }
+            
+            addNewPurchase() {
+                const products = CONFIG.products;
+                const timeOptions = ["just now", "1 min ago", "2 min ago", "3 min ago"];
+                
+                const randomName = CONFIG.buyerNames[this.randomInt(0, CONFIG.buyerNames.length - 1)];
+                const randomProduct = products[this.randomInt(0, products.length - 1)];
+                
+                const newPurchase = {
+                    name: randomName,
+                    product: randomProduct.name,
+                    amount: randomProduct.price,
+                    time: timeOptions[this.randomInt(0, timeOptions.length - 1)]
+                };
+                
+                // Add to recent purchases list at the top
+                const container = document.getElementById('recentPurchases');
+                const purchaseItem = document.createElement('div');
+                purchaseItem.className = 'purchase-item';
+                purchaseItem.innerHTML = `
+                    <div class="purchase-user">
+                        <div class="user-avatar">${newPurchase.name.charAt(0)}</div>
+                        <div class="purchase-info">
+                            <div class="user-name">${newPurchase.name}</div>
+                            <div class="product-name">${newPurchase.product}</div>
+                            <div class="purchase-time">
+                                <i class="far fa-clock"></i> ${newPurchase.time}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="purchase-amount">$${newPurchase.amount.toFixed(2)}</div>
+                `;
+                
+                // Insert at the top
+                if (container.firstChild) {
+                    container.insertBefore(purchaseItem, container.firstChild);
+                } else {
+                    container.appendChild(purchaseItem);
+                }
+                
+                // Limit to 8 items
+                if (container.children.length > 8) {
+                    container.removeChild(container.lastChild);
+                }
+                
+                // Update current buyers list
+                this.currentBuyers.unshift(newPurchase);
+                if (this.currentBuyers.length > 8) {
+                    this.currentBuyers.pop();
+                }
+            }
+            
+            renderRecentPurchases() {
+                const container = document.getElementById('recentPurchases');
+                container.innerHTML = '';
+                
+                this.currentBuyers.forEach(purchase => {
+                    const purchaseItem = document.createElement('div');
+                    purchaseItem.className = 'purchase-item';
+                    purchaseItem.innerHTML = `
+                        <div class="purchase-user">
+                            <div class="user-avatar">${purchase.name.charAt(0)}</div>
+                            <div class="purchase-info">
+                                <div class="user-name">${purchase.name}</div>
+                                <div class="product-name">${purchase.product}</div>
+                                <div class="purchase-time">
+                                    <i class="far fa-clock"></i> ${purchase.time}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="purchase-amount">$${purchase.amount.toFixed(2)}</div>
+                    `;
+                    container.appendChild(purchaseItem);
+                });
+            }
+        }
+
+        // Initialize activity simulation
+        let activitySimulator;
+        function initializeActivitySimulation() {
+            activitySimulator = new ActivitySimulator();
+            activitySimulator.initialize();
+        }
+
+        // Function to handle tab switching
+        function switchMediaTab(productId, tabType) {
+            const productCard = document.getElementById(`product-${productId}`);
+            if (!productCard) return;
+            
+            const image = productCard.querySelector('.product-image');
+            const video = productCard.querySelector('.product-video');
+            const imageTab = productCard.querySelector('.media-tab[data-tab="image"]');
+            const videoTab = productCard.querySelector('.media-tab[data-tab="video"]');
+            
+            if (image && video && imageTab && videoTab) {
+                if (tabType === 'image') {
+                    image.style.display = 'block';
+                    video.style.display = 'none';
+                    imageTab.classList.add('active');
+                    videoTab.classList.remove('active');
+                } else {
+                    image.style.display = 'none';
+                    video.style.display = 'block';
+                    imageTab.classList.remove('active');
+                    videoTab.classList.add('active');
+                }
+            }
+        }
+
+        // Function to render products
+        function renderProducts() {
+            const container = document.getElementById('productsContainer');
+            container.innerHTML = '';
+            
+            CONFIG.products.forEach(product => {
+                const productCard = document.createElement('div');
+                productCard.className = 'product-card';
+                productCard.id = `product-${product.id}`;
+                
+                // Check if we have image and video
+                const hasImage = product.image && product.image.trim() !== '';
+                const hasVideo = product.videoPreview && product.videoPreview.trim() !== '';
+                
+                let mediaHTML = '';
+                
+                // Add best seller badge if applicable
+                const bestSellerBadge = product.bestSeller ? 
+                    `<div class="best-seller-badge"><i class="fas fa-trophy"></i> BEST SELLER</div>` : '';
+                
+                // CASO 1: Tem imagem E vídeo (mostra tabs)
+                if (hasImage && hasVideo) {
+                    mediaHTML = `
+                        <div class="media-container">
+                            ${bestSellerBadge}
+                            <div class="media-tabs">
+                                <button class="media-tab active" data-tab="image" onclick="switchMediaTab(${product.id}, 'image')">
+                                    <i class="fas fa-image"></i> Image
+                                </button>
+                                <button class="media-tab" data-tab="video" onclick="switchMediaTab(${product.id}, 'video')">
+                                    <i class="fas fa-video"></i> Preview
+                                </button>
+                            </div>
+                            <div class="media-content">
+                                <img src="${product.image}" alt="${product.name}" class="product-image" style="display: block;" loading="lazy">
+                                <video controls class="product-video" style="display: none;" onclick="playFullscreenVideo('${product.videoPreview}')">
+                                    <source src="${product.videoPreview}" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                        </div>
+                    `;
+                }
+                // CASO 2: Tem apenas VÍDEO (sem imagem)
+                else if (!hasImage && hasVideo) {
+                    mediaHTML = `
+                        <div class="media-container">
+                            ${bestSellerBadge}
+                            <div class="media-content">
+                                <video controls class="product-video" style="display: block; width: 100%; height: 100%;" onclick="playFullscreenVideo('${product.videoPreview}')">
+                                    <source src="${product.videoPreview}" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                        </div>
+                    `;
+                }
+                // CASO 3: Tem apenas IMAGEM (sem vídeo)
+                else if (hasImage && !hasVideo) {
+                    mediaHTML = `
+                        <div class="media-container">
+                            ${bestSellerBadge}
+                            <div class="media-content">
+                                <img src="${product.image}" alt="${product.name}" class="product-image" style="display: block; width: 100%; height: 100%;" loading="lazy">
+                            </div>
+                        </div>
+                    `;
+                }
+                // CASO 4: Não tem nenhum media
+                else {
+                    mediaHTML = `
+                        <div class="media-container">
+                            ${bestSellerBadge}
+                            <div class="media-placeholder" style="display: flex;">
+                                <i class="fas fa-image"></i> No Media Available
+                            </div>
+                        </div>
+                    `;
+                }
+                
+                // Create formatted description with checkmarks
+                let descriptionHTML = '';
+                if (Array.isArray(product.description)) {
+                    product.description.forEach(line => {
+                        if (line.startsWith('✅')) {
+                            descriptionHTML += `
+                                <div class="description-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>${line.substring(2)}</span>
+                                </div>
+                            `;
+                        } else {
+                            descriptionHTML += `<p style="margin-top: 8px; font-size: 0.85rem;">${line}</p>`;
+                        }
+                    });
+                } else {
+                    descriptionHTML = `<p>${product.description}</p>`;
+                }
+                
+                // Create payment options HTML
+                let paymentHTML = '';
+                if (CONFIG.stripeEnabled && product.stripeUrl) {
+                    paymentHTML = `
+                        <div class="payment-options">
+                            <div class="payment-method-selector">
+                                <button class="payment-method-tab active" data-method="stripe" onclick="switchPaymentMethod(${product.id}, 'stripe')">
+                                    <i class="fab fa-stripe stripe-icon"></i> Stripe
+                                </button>
+                                <button class="payment-method-tab" data-method="telegram" onclick="switchPaymentMethod(${product.id}, 'telegram')">
+                                    <i class="fab fa-telegram telegram-icon"></i> Telegram
+                                </button>
+                            </div>
+                            
+                            <div class="payment-method-content stripe-payment active">
+                                <button onclick="buyWithStripe(${product.id}, '${product.stripeUrl}', '${product.name.replace(/'/g, "\\'")}', ${product.price})" class="stripe-btn">
+                                    <i class="fab fa-stripe"></i> Pay with Stripe - $${product.price.toFixed(2)}
+                                </button>
+                                <div class="secure-badge">
+                                    <i class="fas fa-shield-alt"></i> Secure SSL Payment
+                                </div>
+                                <div class="fallback-notice" id="fallback-${product.id}">
+                                    <i class="fas fa-info-circle"></i> Stripe blocked? Use Telegram
+                                </div>
+                            </div>
+                            
+                            <div class="payment-method-content telegram-payment">
+                                <button onclick="redirectToTelegram(${product.id})" class="buy-btn">
+                                    <i class="fab fa-telegram"></i> Pay via Telegram - $${product.price.toFixed(2)}
+                                </button>
+                            </div>
+                        </div>
+                    `;
+                } else {
+                    paymentHTML = `
+                        <button onclick="redirectToTelegram(${product.id})" class="buy-btn">
+                            <i class="fab fa-telegram"></i> Buy Now $${product.price.toFixed(2)}
+                        </button>
+                    `;
+                }
+                
+                productCard.innerHTML = `
+                    ${mediaHTML}
+                    <div class="product-content">
+                        <h3 class="product-title">${product.name}</h3>
+                        <div class="product-description">
+                            ${descriptionHTML}
+                        </div>
+                        <div class="product-price">${product.price.toFixed(2)}</div>
+                        ${paymentHTML}
+                        <div class="purchase-count">
+                            <i class="fas fa-shopping-cart"></i> ${product.purchaseCount} recent purchases
+                        </div>
+                    </div>
+                `;
+                
+                container.appendChild(productCard);
+            });
+        }
+
+        // Function to render VIP channels
+        function renderVIPChannels() {
+            const container = document.getElementById('vipContainer');
+            container.innerHTML = '';
+            
+            CONFIG.vipChannels.forEach(vip => {
+                const vipCard = document.createElement('div');
+                vipCard.className = 'vip-card';
+                vipCard.id = `vip-${vip.id}`;
+                
+                // Create payment options HTML for VIP
+                let paymentHTML = '';
+                if (CONFIG.stripeEnabled && vip.stripeUrl) {
+                    paymentHTML = `
+                        <div class="payment-options">
+                            <div class="payment-method-selector">
+                                <button class="payment-method-tab active" data-method="stripe" onclick="switchPaymentMethodVIP(${vip.id}, 'stripe')">
+                                    <i class="fab fa-stripe stripe-icon"></i> Stripe
+                                </button>
+                                <button class="payment-method-tab" data-method="telegram" onclick="switchPaymentMethodVIP(${vip.id}, 'telegram')">
+                                    <i class="fab fa-telegram telegram-icon"></i> Telegram
+                                </button>
+                            </div>
+                            
+                            <div class="payment-method-content stripe-payment active">
+                                <button onclick="buyVIPWithStripe(${vip.id}, '${vip.stripeUrl}', '${vip.name.replace(/'/g, "\\'")}', ${vip.price})" class="stripe-btn">
+                                    <i class="fab fa-stripe"></i> Pay with Stripe - $${vip.price}
+                                </button>
+                                <div class="secure-badge">
+                                    <i class="fas fa-shield-alt"></i> Secure SSL Payment
+                                </div>
+                                <div class="fallback-notice" id="vip-fallback-${vip.id}">
+                                    <i class="fas fa-info-circle"></i> Stripe blocked? Use Telegram
+                                </div>
+                            </div>
+                            
+                            <div class="payment-method-content telegram-payment">
+                                <button onclick="redirectToTelegramVIP(${vip.id})" class="vip-btn">
+                                    <i class="fab fa-telegram"></i> Pay via Telegram - $${vip.price}
+                                </button>
+                            </div>
+                        </div>
+                    `;
+                } else {
+                    paymentHTML = `
+                        <button onclick="redirectToTelegramVIP(${vip.id})" class="vip-btn">
+                            <i class="fab fa-telegram"></i> Buy VIP Access - $${vip.price}
+                        </button>
+                    `;
+                }
+                
+                vipCard.innerHTML = `
+                    <div class="vip-video-container">
+                        <video controls class="vip-video" onclick="playFullscreenVideo('${vip.videoPreview}')">
+                            <source src="${vip.videoPreview}" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="vip-badge">
+                            <i class="fas fa-crown"></i> VIP
+                        </div>
+                    </div>
+                    <div class="vip-content">
+                        <h3 class="vip-title">${vip.name}</h3>
+                        <p class="vip-description">${vip.description}</p>
+                        
+                        <div class="vip-stats">
+                            <div class="vip-stat">
+                                <div class="vip-stat-number">${vip.members}</div>
+                                <div class="vip-stat-label">Members</div>
+                            </div>
+                            <div class="vip-stat">
+                                <div class="vip-stat-number">${vip.updates}</div>
+                                <div class="vip-stat-label">Updates</div>
+                            </div>
+                            <div class="vip-stat">
+                                <div class="vip-stat-number">${vip.content}</div>
+                                <div class="vip-stat-label">Content</div>
+                            </div>
+                        </div>
+                        
+                        <div class="vip-price">$${vip.price}</div>
+                        
+                        ${paymentHTML}
+                    </div>
+                `;
+                
+                container.appendChild(vipCard);
+            });
+        }
+
+        // Utility function to test Stripe links
+        function testStripeLinks() {
+            console.log("=== TESTING STRIPE LINKS ===");
+            console.log("All Content Stripe URL:", CONFIG.allContentStripeUrl);
+            
+            console.log("\n=== PRODUCTS WITH STRIPE ===");
+            CONFIG.products.forEach(p => {
+                if (p.stripeUrl && p.stripeUrl !== "https://buy.stripe.com/...") {
+                    console.log(`Product ${p.id} (${p.name}):`, p.stripeUrl);
+                }
+            });
+            
+            console.log("\n=== VIP WITH STRIPE ===");
+            CONFIG.vipChannels.forEach(v => {
+                if (v.stripeUrl && v.stripeUrl !== "https://buy.stripe.com/...") {
+                    console.log(`VIP ${v.id} (${v.name}):`, v.stripeUrl);
+                }
+            });
+            
+            console.log("\n=== CONFIGURATION ===");
+            console.log("Stripe Enabled:", CONFIG.stripeEnabled);
+            console.log("Stripe Fallback to Telegram:", CONFIG.stripeFallbackToTelegram);
+        }
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
+            showContent();
+            
+            // Close fullscreen with Escape key
+            document.addEventListener('keydown', function(event) {
+                if (event.key === 'Escape') {
+                    closeFullscreenVideo();
+                    closeFallbackModal();
+                }
+            });
+            
+            // Close fallback modal when clicking outside
+            document.getElementById('fallbackModal').addEventListener('click', function(event) {
+                if (event.target === this) {
+                    closeFallbackModal();
+                }
+            });
+        });
+
+        // Expose functions to global scope
+        window.returnToHome = returnToHome;
+        window.switchMediaTab = switchMediaTab;
+        window.switchPreviewVideo = switchPreviewVideo;
+        window.switchMainTab = switchMainTab;
+        window.playFullscreenVideo = playFullscreenVideo;
+        window.closeFullscreenVideo = closeFullscreenVideo;
+        window.redirectToTelegram = redirectToTelegram;
+        window.redirectToTelegramVIP = redirectToTelegramVIP;
+        window.redirectToTelegramAllContent = redirectToTelegramAllContent;
+        window.switchPaymentMethod = switchPaymentMethod;
+        window.switchPaymentMethodVIP = switchPaymentMethodVIP;
+        window.buyWithStripe = buyWithStripe;
+        window.buyVIPWithStripe = buyVIPWithStripe;
+        window.buyAllContentWithStripe = buyAllContentWithStripe;
+        window.showFallbackModal = showFallbackModal;
+        window.closeFallbackModal = closeFallbackModal;
+        window.testStripeLinks = testStripeLinks;
+    </script>
+</body>
+</html>
